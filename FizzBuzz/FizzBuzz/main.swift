@@ -8,5 +8,8 @@
 
 import Foundation
 
-print("Hello, World!")
+let fb = FizzBuzz()
+let resultFizzBuzz = fb.generateFizzBuzzR(min: 0, max: 30)
+print(resultFizzBuzz)
+
 

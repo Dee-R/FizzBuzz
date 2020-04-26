@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		936F48DD2456163D00E6F2CC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936F48DC2456163D00E6F2CC /* main.swift */; };
+		936F48E4245616D700E6F2CC /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936F48E3245616D700E6F2CC /* FizzBuzz.swift */; };
+		936F48EC2456171000E6F2CC /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936F48EB2456171000E6F2CC /* FizzBuzzTests.swift */; };
+		936F48F12456209C00E6F2CC /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936F48E3245616D700E6F2CC /* FizzBuzz.swift */; };
+		936F48F32456218C00E6F2CC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936F48DC2456163D00E6F2CC /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +28,21 @@
 /* Begin PBXFileReference section */
 		936F48D92456163D00E6F2CC /* FizzBuzz */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FizzBuzz; sourceTree = BUILT_PRODUCTS_DIR; };
 		936F48DC2456163D00E6F2CC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		936F48E3245616D700E6F2CC /* FizzBuzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzz.swift; sourceTree = "<group>"; };
+		936F48E92456171000E6F2CC /* FizzBuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		936F48EB2456171000E6F2CC /* FizzBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTests.swift; sourceTree = "<group>"; };
+		936F48ED2456171000E6F2CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		936F48D62456163D00E6F2CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		936F48E62456171000E6F2CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				936F48DB2456163D00E6F2CC /* FizzBuzz */,
+				936F48EA2456171000E6F2CC /* FizzBuzzTests */,
 				936F48DA2456163D00E6F2CC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				936F48D92456163D00E6F2CC /* FizzBuzz */,
+				936F48E92456171000E6F2CC /* FizzBuzzTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +74,18 @@
 			isa = PBXGroup;
 			children = (
 				936F48DC2456163D00E6F2CC /* main.swift */,
+				936F48E3245616D700E6F2CC /* FizzBuzz.swift */,
 			);
 			path = FizzBuzz;
+			sourceTree = "<group>";
+		};
+		936F48EA2456171000E6F2CC /* FizzBuzzTests */ = {
+			isa = PBXGroup;
+			children = (
+				936F48EB2456171000E6F2CC /* FizzBuzzTests.swift */,
+				936F48ED2456171000E6F2CC /* Info.plist */,
+			);
+			path = FizzBuzzTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +108,23 @@
 			productReference = 936F48D92456163D00E6F2CC /* FizzBuzz */;
 			productType = "com.apple.product-type.tool";
 		};
+		936F48E82456171000E6F2CC /* FizzBuzzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 936F48EE2456171000E6F2CC /* Build configuration list for PBXNativeTarget "FizzBuzzTests" */;
+			buildPhases = (
+				936F48E52456171000E6F2CC /* Sources */,
+				936F48E62456171000E6F2CC /* Frameworks */,
+				936F48E72456171000E6F2CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FizzBuzzTests;
+			productName = FizzBuzzTests;
+			productReference = 936F48E92456171000E6F2CC /* FizzBuzzTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +136,9 @@
 				ORGANIZATIONNAME = EddyR;
 				TargetAttributes = {
 					936F48D82456163D00E6F2CC = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					936F48E82456171000E6F2CC = {
 						CreatedOnToolsVersion = 11.4;
 					};
 				};
@@ -111,16 +157,37 @@
 			projectRoot = "";
 			targets = (
 				936F48D82456163D00E6F2CC /* FizzBuzz */,
+				936F48E82456171000E6F2CC /* FizzBuzzTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		936F48E72456171000E6F2CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		936F48D52456163D00E6F2CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				936F48DD2456163D00E6F2CC /* main.swift in Sources */,
+				936F48F32456218C00E6F2CC /* main.swift in Sources */,
+				936F48E4245616D700E6F2CC /* FizzBuzz.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		936F48E52456171000E6F2CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				936F48F12456209C00E6F2CC /* FizzBuzz.swift in Sources */,
+				936F48EC2456171000E6F2CC /* FizzBuzzTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +325,40 @@
 			};
 			name = Release;
 		};
+		936F48EF2456171000E6F2CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FizzBuzzTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dee.FizzBuzzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		936F48F02456171000E6F2CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FizzBuzzTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dee.FizzBuzzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -275,6 +376,15 @@
 			buildConfigurations = (
 				936F48E12456163D00E6F2CC /* Debug */,
 				936F48E22456163D00E6F2CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		936F48EE2456171000E6F2CC /* Build configuration list for PBXNativeTarget "FizzBuzzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				936F48EF2456171000E6F2CC /* Debug */,
+				936F48F02456171000E6F2CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
